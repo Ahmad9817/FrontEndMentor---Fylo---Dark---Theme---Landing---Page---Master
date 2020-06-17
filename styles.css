@@ -1,0 +1,503 @@
+html {
+    height: 100%;
+}
+
+.background-image {
+    background: url(images/bg-curvy-mobile.svg);
+    width: 100%;
+    height: 57vh;
+    background-position: bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: rgb(32, 42, 60);
+    z-index: -100;
+    position: absolute;
+}
+
+body {
+    background: rgb(24, 31, 42);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.7rem;
+    color: hsl(0, 0%, 100%);
+    font-weight: 400;
+    margin: 0;
+}
+
+/********************** Common Properties **************/
+.important-font {
+    font-family: 'Raleway', sans-serif;
+}
+
+.main-nav__item a,
+.main-footer-nav__item a,
+.intro__cta-button a {
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+}
+
+.main-nav__items,
+.main-footer-nav__items {
+    list-style: none;
+    padding: 0;
+}
+
+.main-header__brand-logo,
+.how-it-works__link,
+.how-it-works__link img,
+.customer__img,
+.customer-profile,
+.main-footer__contact img {
+    vertical-align: middle;
+}
+
+/*******************************************************/
+
+main {
+    padding: 1.5rem;
+    padding-bottom: 0;
+    text-align: center;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.3rem;
+}
+
+.main-header__brand-logo a img {
+    width: 4.8rem;
+}
+
+
+.main-nav__items {
+    display: flex;
+    margin: 0;
+}
+
+.main-nav__item {
+    margin: 0 0.6rem;
+}
+
+.main-nav__item:first-of-type {
+    margin-left: 0;
+}
+
+.main-nav__item:last-of-type {
+    margin-right: 0;
+}
+
+
+/* Intro Section  */
+
+
+.intro {
+    margin-bottom: 7rem;
+}
+
+.intro__illustration {
+    width: 100%;
+}
+
+.intro__header-text {
+    line-height: 32px;
+    font-size: 1.2rem;
+}
+
+.cta-button {
+    background: linear-gradient(to bottom,  hsl(176, 68%, 64%) 90%, hsl(198, 60%, 50%));
+}
+
+.intro__cta-button {
+    height: 2.5rem;
+    width: 75%;
+    border: none;
+    border-radius: 30px;
+    margin: 0.85rem auto;
+    font-weight: 700;
+    font-size: 0.7rem;
+}
+
+/* Features Section  */
+
+.features {
+    margin-bottom: 7rem;
+    font-size: 0.8rem;
+}
+
+.features__item {
+    margin: 5rem 0;
+}
+
+.features__item div {
+    height: 6rem;
+}
+
+.features__item-header,
+.purpose__header-text {
+    font-size: 0.9rem;
+}
+
+/* Purpose Section  */
+
+.purpose {
+    text-align: left;
+    margin-bottom: 7rem;
+}
+
+.purpose__illustration {
+    margin-bottom: 2rem;
+}
+
+.purpose__illustration img {
+    width: 100%;
+}
+
+.how-it-works__link {
+    text-decoration: none;
+    color: rgb(101, 226, 217);
+}
+
+.how-it-works__link span {
+    display: inline-block;
+}
+
+.how-it-works__link hr {
+    width: 100%;
+    border-style: solid;
+    margin: 2px 0;
+}
+
+.how-it-works__link img {
+    margin-left: 5px;
+}
+
+/* TestimonialscSection  */
+
+.testimonies {
+    padding: 0.5rem;
+    background: url(images/bg-quotes.png);
+    background-position: left 12px top 18px;
+    background-repeat: no-repeat;
+    background-size:20px;
+}
+
+.testimony {
+    margin: 1.5rem 0;
+    background-color: rgb(32, 42, 60);
+    padding: 1.5rem 1.5rem 1.1rem 1.1rem;
+    border-radius: 5px;
+    text-align: left;
+    box-shadow: 0 0 5px 5px rgba(11, 21, 35, 0.1);
+}
+
+.testimony:last-of-type {
+    margin-bottom: 0;
+}
+
+.testimony-main__text {
+    margin: 0;
+    font-size: 0.6rem;
+}
+
+.customer {
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+.customer__img {
+    width: 12%;
+    border-radius: 50%;
+}
+
+.customer-profile {
+    display: inline-block;
+    margin-left: 0.3rem;
+}
+
+.customer__name {
+    font-size: 0.6rem;
+    margin: 0;
+}
+
+.customer__title {
+    font-size: 0.5rem;
+    margin: 0.2rem 0 0 0;
+}
+
+/* Sign-up Section  */
+
+.sign-up {
+    background-color: rgb(28, 36, 49);
+    box-shadow: 0 0 5px 5px rgba(11, 21, 35, 0.1);
+    padding:  1.8rem 1.2rem;
+    border-radius: 10px;
+    position: relative;
+    top: 140px;
+}
+
+.sign-up__title {
+    font-size: 0.9rem;
+}
+
+.sign-up p {
+    margin: 0.87rem 0;
+}
+
+.sign-up__email {
+    height: 2.5rem;
+    width: 100%;
+    border-radius: 30px;
+    padding: 0.5rem 1.5rem;
+    box-sizing: border-box;
+    border: none;
+    margin: 1rem 0 1rem 0;
+}
+
+.sign-up-cta-button {
+    height: 2.5rem;
+    width: 100%;
+    border-radius: 30px;    
+    border: none;
+    color: inherit;
+    font-weight: 700;
+    font-size: 0.7rem;
+}
+
+/* Footer Section  */
+
+.main-footer {
+    padding: 1.5rem;
+    padding-top: 12rem;
+    background-color: rgb(11, 21, 35);
+}
+
+.main-footer__company-details,
+.main-footer__company-details-links {
+    margin: 2.5rem 0;
+}
+
+.footer__logo {
+    width: 9rem;
+}
+
+.main-footer__contact img {
+    height: 12px;
+    margin-right: 1rem;
+}
+
+.main-footer__contact p {
+    display: inline-block;
+    width: 80%;
+    margin-bottom: 0;
+}
+
+.main-footer__contact:first-of-type img,
+.main-footer__contact:first-of-type p  {
+   vertical-align: top;
+}
+
+.main-footer__contact:first-of-type img {
+    margin-top: 1.3em;
+}
+
+.main-footer-nav__item {
+    margin-top: 1em;
+}
+
+.main-footer__social-media-icons img {
+    height: 13px;
+}
+
+.main-footer__social-media-icons div {
+    border: solid 1px white;
+    border-radius: 50%;
+    color: white;
+    height: 27px;
+    width: 27px;
+    margin: 0 0.2rem;
+    text-align: center;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-author {
+    background-color: rgb(11, 21, 35);
+    padding: 1rem;
+    text-align: center;
+}
+
+.attribution {
+    margin: 0;
+}
+
+.main-footer__social-media-icons {
+    justify-self: flex-end;
+}
+
+@media (min-width: 375px) {
+    body {
+        min-width: 860px;
+    }
+
+    .main-header {
+        padding: 3.5rem;
+    }
+
+    .main-header__brand-logo a img {
+        width: 10rem;
+    }
+
+    body {
+        font-size: 0.9rem;
+    }
+
+    .background-image {
+        background: url(images/bg-curvy-desktop.svg);
+        width: 100%;
+        height: 1200px;
+        min-width: 860px;
+        background-position: bottom;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: rgb(32, 42, 60);
+    }    
+
+    main {
+        padding: 1rem 3.5rem 0 3.5rem;
+    }
+
+    .main-nav__item {
+        margin: 0 2rem;
+    }
+
+    .intro {
+        width: 55%;
+        margin: 0 auto;
+        margin-bottom: 7rem;
+    }
+
+    .intro__header-text {
+        line-height: 55px;
+        font-size: 2.2rem;
+    }
+
+    .intro  p {
+        font-size: 1.1rem;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .intro__cta-button {
+        width: 35%;
+        margin: 2rem auto;
+    }
+
+    .features {
+        display: grid;
+        grid-template-columns: 27% 27%;
+        grid-gap: 5rem 7rem;
+        justify-content: center;
+    }
+
+    .features__item {
+        margin: 0;
+    }
+
+    .purpose {
+        display: grid;
+        grid-template-columns: 45% 45%;
+        grid-column-gap: 2.5rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .purpose__illustration img {
+        width: 90%;
+    }
+
+    .purpose__illustration {
+        margin-bottom: 0;
+    }
+
+    .purpose__header-text {
+        font-size: 2.2rem;
+        width: 68%;
+    }
+
+    .testimonies {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 2rem;
+        justify-content: space-between;
+        background-position: left top;
+        background-size: 40px;
+        padding: 1.6rem 0;
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    .testimony {
+        margin: 0;
+    }
+
+    
+    .sign-up {
+        width: 60%;
+        margin: 0 auto;
+        top: 120px;
+    }
+
+    .sign-up__title {
+        font-size: 1.8rem;
+    }
+
+    .sign-up__title + p {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .sign-up-form {
+        display: grid;
+        grid-template-columns: 55% 33%;
+        justify-content: center;
+        align-content: center;
+        grid-column-gap: 1rem;
+        margin: 1rem 0;
+    }
+
+    .sign-up-cta-button {
+        align-self: center;
+    }
+
+    .main-footer {
+        padding: 0 3.5rem;
+        padding-top: 12rem;
+    }
+
+    .main-footer-text {
+        display: grid;
+        grid-template-columns: 60% 10% 10% 16%;
+        margin-top: 2.5rem;
+        justify-content: space-between;
+    }
+
+    .main-footer__company-details,
+    .main-footer__company-details-links,
+    .main-footer-nav__items,
+    .main-footer-nav__item:first-of-type,
+    .main-footer__contact img:nth-of-type(1),
+    .main-footer__address,
+    .main-footer__contact div:first-of-type p {
+        margin-top: 0;
+    }
+
+    .main-footer__contact img {
+        margin-right: 1rem;
+    }
+    .main-footer__company-details {
+        display: grid;
+        grid-template-columns: 60% 40%;
+    }
+}
